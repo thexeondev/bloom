@@ -1,0 +1,6 @@
+.{
+    .@"BaseVersion.ini" = .{
+        .ClientVersion = .{ .IsHotUpdate = "False" },
+        .EU = .{ .ServerUrlRelease = "http://127.0.0.1:30002/server_info" },
+    },
+}

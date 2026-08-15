@@ -1,0 +1,14 @@
+.{
+    .@"2144828999" = .{
+        .string_from_cstr = 0x11E2160,
+        .launch_key_check = 0x45CC880,
+        .get_login_host = 0x454A8E0,
+        .get_ini_config = 0x54CC4C0,
+    },
+    .@"3220482108" = .{
+        .string_from_cstr = 0x11E23C0,
+        .launch_key_check = 0x45CAC90,
+        .get_login_host = 0x4548DF0,
+        .get_ini_config = 0x54C9EE0,
+    },
+}
