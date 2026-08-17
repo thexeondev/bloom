@@ -3,7 +3,7 @@
 Client patch for the game **Silver Palace**, implemented to work with [Roze](https://git.xeondev.com/roze/roze)
 
 ## Requirements
-The only dependency is the Zig Compiler, version `0.17.0-dev.1609+11e2bb391`: [Linux](https://ziglang.org/builds/zig-x86_64-linux-0.17.0-dev.1609+11e2bb391.tar.xz)/[Windows](https://ziglang.org/builds/zig-x86_64-windows-0.17.0-dev.1609+11e2bb391.zip)
+The only dependency is the Zig Compiler, version `0.17.0-dev.1778+767d25269`: [Linux](https://ziglang.org/builds/zig-x86_64-linux-0.17.0-dev.1778+767d25269.tar.xz)/[Windows](https://ziglang.org/builds/zig-x86_64-windows-0.17.0-dev.1778+767d25269.zip)
 
 #### Supported client versions: CB2 (Global), builds `0.10.80.0` and `0.10.82.1`.
 
