@@ -1,5 +1,8 @@
 const Interception = @This();
+
 const std = @import("std");
+const mem = std.mem;
+
 const nt = @import("nt.zig");
 
 address: usize,
@@ -63,6 +66,13 @@ pub fn replace(syscall: *nt.Syscall, address: usize, comptime replacementFn: any
     var int: Interception = undefined;
     int.address = address;
     @memcpy(&int.previous_bytes, @as(*const [Trampoline.size]u8, @ptrFromInt(address)));
+
+    // Because all of the executable code is packed by default,
+    // the read access above triggers unpacking of this memory region.
+    // Without it, our hook will get overwritten upon the first read/exec access.
+    //
+    // When the result of `replace` function is discarded, the read is optimized out.
+    mem.doNotOptimizeAway(&int.previous_bytes);
 
     const trampoline: Trampoline = .{ .address = @intFromPtr(&replacementFn) };
 
