@@ -1,7 +1,7 @@
 .{
     .name = .bloom,
     .version = "0.0.1",
-    .minimum_zig_version = "0.17.0-dev.1778+767d25269",
+    .minimum_zig_version = "0.17.0-dev.1946+d813faaf0",
     .paths = .{""},
     .fingerprint = 0xc6cd7d1bcd1c1337,
 }
